@@ -1,0 +1,19 @@
+/* Black-and-white / low-ink print variant: overrides for flyer.src.html */
+.page { background: #fff; }
+body { color: #000; }
+.mast { background: #fff; color: #000; border-bottom: 1.6mm solid #000; }
+.kicker { color: #000; }
+h1, h2, .concerns strong, .concern h3, .sign .name strong { color: #000; }
+h2::before { background: #000; }
+figure img { filter: grayscale(1) contrast(1.08); outline-color: #000; }
+figcaption { color: #333; }
+.concerns li { background: #fff; border: 0.3mm solid #000; border-left: 1.4mm solid #000; }
+.proposal li::marker { color: #000; }
+.concern { background: #fff; border: 0.3mm solid #000; border-left: 1.8mm solid #000; }
+.meeting { background: #fff; color: #000; border: 0.9mm solid #000; }
+.meeting h2 { color: #000; }
+.meeting h2::before { background: #000; }
+.meeting .when { color: #000; background: #e6e6e6; display: inline-block; padding: 0.6mm 2.4mm; border-radius: 1mm; }
+.qr .code { border: 0.4mm solid #000; padding: 1.6mm; }
+.qr small { color: #000; }
+.sign { border-top-color: #000; }

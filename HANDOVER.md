@@ -106,7 +106,8 @@ Check that it still fits on one A4 page, then deploy.
 The resident flyer (original text from the organiser's Word/ODT file in `photos/`, restyled,
 with a QR code to the site) lives in `handout/flyer.src.html`. Its photos are in
 `handout/flyer-img/` and the QR is `handout/flyer-qr.svg`. Rebuild with
-`handout/build-flyer.sh`, which also copies the PDF to `public/groundwater-meeting-flyer.pdf`.
+`handout/build-flyer.sh`, which builds the colour PDF (`public/groundwater-meeting-flyer.pdf`) and a
+low-ink black-and-white version (`public/groundwater-meeting-flyer-bw.pdf`, styled by `handout/flyer-bw.css`).
 The site links to it as "Download flyer (PDF)". The flyer replaced the old handout download on the site (the user chose to publish it as is, including the organiser's name,
 address and phone, which departs from §5).
 
