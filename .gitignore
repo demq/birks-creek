@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.wrangler/
+.DS_Store
+*.log
+.env*
+.claude/
+private/
+
+# Original photos keep camera metadata; only stripped copies in public/img are committed
+photos/
