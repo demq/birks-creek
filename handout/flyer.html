@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8" />
+<title>Ongoing groundwater discharge into Birks Street and Myra Street</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #1e2a1c;
+    font-size: 9.2pt;
+    line-height: 1.38;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm;
+    height: 297mm;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #fffdf6;
+  }
+
+  /* Masthead */
+  .mast {
+    background: #2f4a32;
+    color: #f3ead2;
+    padding: 6mm 14mm 4.5mm;
+    border-bottom: 2.5mm solid #1d5b7a;
+  }
+  .kicker {
+    margin: 0 0 1.8mm;
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: none;
+    color: #e8c46a;
+  }
+  h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 19pt;
+    text-wrap: balance;
+    line-height: 1.12;
+  }
+
+  .body { padding: 4.5mm 14mm 0; display: flex; flex-direction: column; gap: 3.2mm; flex: 1; }
+  p { margin: 0 0 2mm; }
+  p:last-child { margin-bottom: 0; }
+
+  h2 {
+    margin: 0 0 2mm;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 13pt;
+    color: #2f4a32;
+    display: flex;
+    align-items: center;
+    gap: 2.5mm;
+  }
+  h2::before {
+    content: "";
+    width: 1.6mm; height: 5mm;
+    background: #1d5b7a;
+    border-radius: 0.8mm;
+    flex: none;
+  }
+
+  /* Intro + photos */
+  .intro { display: grid; grid-template-columns: 1fr 56mm; gap: 6mm; align-items: start; }
+  .intro p { font-size: 9.6pt; line-height: 1.5; }
+  .photos { display: grid; gap: 2.5mm; }
+  figure { margin: 0; }
+  figure img {
+    display: block;
+    width: 100%;
+    height: 24mm;
+    object-fit: cover;
+    border-radius: 1.6mm;
+    border: 0.6mm solid #fff;
+    outline: 0.25mm solid #cfc7ae;
+  }
+  figcaption {
+    margin-top: 1.2mm;
+    font-size: 8pt;
+    font-style: italic;
+    color: #5d6a57;
+  }
+  .photos figure:first-child { transform: rotate(-0.8deg); }
+  .photos figure:last-child { transform: rotate(0.8deg); }
+
+  /* Concerns */
+  .concerns { display: grid; grid-template-columns: 1fr 1fr; gap: 2.6mm; margin: 0; padding: 0; list-style: none; }
+  .concerns li {
+    background: #f3ead2;
+    border-top: 1.2mm solid #2f4a32;
+    border-radius: 0 0 1.8mm 1.8mm;
+    padding: 2mm 3.2mm 2.4mm;
+  }
+  .concerns strong { display: block; margin-bottom: 0.6mm; color: #2f4a32; font-size: 10pt; }
+
+  /* Proposal */
+  .proposal {
+    border-left: 1.2mm solid #1d5b7a;
+    padding-left: 4mm;
+  }
+
+  /* Meeting */
+  .meeting {
+    margin-top: auto;
+    margin-bottom: 3.5mm;
+    background: #1d5b7a;
+    color: #fff;
+    border-radius: 3mm;
+    padding: 4.2mm 6mm;
+    display: grid;
+    grid-template-columns: 1fr 30mm;
+    gap: 5mm;
+    align-items: center;
+  }
+  .meeting h2 { color: #f3ead2; margin-bottom: 1mm; font-size: 11.5pt; }
+  .meeting h2::before { background: #e8c46a; }
+  .meeting .when {
+    margin: 0 0 2.4mm;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 17pt;
+    letter-spacing: 0.02em;
+    color: #e8c46a;
+  }
+  .meeting p { font-size: 8.8pt; line-height: 1.34; margin-bottom: 1.2mm; }
+  .qr { text-align: center; }
+  .qr .code {
+    background: #fff;
+    padding: 2.2mm;
+    border-radius: 2mm;
+    width: 30mm;
+    height: 30mm;
+  }
+  .qr .code svg { display: block; width: 100%; height: 100%; }
+  .qr small { display: block; margin-top: 1.6mm; font-size: 7.6pt; font-weight: 700; letter-spacing: 0.02em; color: #f3ead2; }
+
+  /* Sign-off */
+  .sign {
+    padding: 2.6mm 14mm 4mm;
+    border-top: 0.4mm solid #cfc7ae;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 6mm;
+    font-size: 9.6pt;
+  }
+  .sign .name { font-family: Georgia, "Times New Roman", serif; font-style: italic; }
+  .sign .name strong { font-style: normal; font-weight: 700; color: #2f4a32; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="mast">
+    <p class="kicker">PARKSIDE RESIDENTS – YOUR ATTENTION PLEASE</p>
+    <h1>Ongoing groundwater discharge into Birks Street and Myra Street</h1>
+  </header>
+
+  <div class="body">
+
+    <section class="intro">
+      <p>Residents may have noticed that water continues to flow and collect in sections of the street gutters along Birks Street and Myra Street, even during completely dry weather. The source appears to be groundwater collected beneath the basement of the recently constructed apartment development at 293–295 Fullarton Road (corner of Birks Street). The water is understood to be collected in a holding tank and periodically pumped into the Birks Street gutter, where it flows along Birks Street and into Myra Street towards the stormwater drain near Campbell Road. This has been occurring for approximately three years.</p>
+      <div class="photos">
+        <figure>
+          <img src="flyer-img/outside-4-birks.jpg" alt="" />
+          <figcaption>Outside 4 Birks St</figcaption>
+        </figure>
+        <figure>
+          <img src="flyer-img/birks-myra-corner.jpg" alt="" />
+          <figcaption>Corner of Birks and Myra Streets</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Why are residents concerned?</h2>
+      <p>There are several issues:</p>
+      <ul class="concerns">
+        <li><strong>Ongoing nuisance:</strong> Water flows or pools in the gutters even on dry, sunny days. Residents and visitors getting into and out of parked vehicles can be forced to step through water.</li>
+        <li><strong>Mosquitoes:</strong> With warmer weather approaching, stagnant or slow-moving water may create potential mosquito breeding conditions.</li>
+        <li><strong>Council stormwater system:</strong> Is it appropriate for groundwater from a private development to be continuously pumped into the public street drainage system?</li>
+        <li><strong>Development approval:</strong> The original development consent includes conditions requiring stormwater to be managed on-site without adversely affecting adjoining properties or the road network. Questions remain about whether the permanent groundwater discharge was included in or authorised by the approved plans.</li>
+      </ul>
+    </section>
+
+    <section class="proposal">
+      <h2>What is being proposed?</h2>
+      <p>Council has acknowledged that the ongoing discharge presents a nuisance and requires appropriate management.</p>
+      <p>One possible solution being pursued by Council is the installation of additional tree wells to help absorb the discharged water.</p>
+      <p>However, there are concerns that this does not address the underlying problem – the continuous pumping of groundwater from the private development into our streets. It may simply involve Council undertaking additional public infrastructure works to deal with a problem originating on private property.</p>
+    </section>
+
+    <section class="meeting">
+      <div>
+        <h2>RESIDENT SITE MEETING – Outside 4 Birks St</h2>
+        <p class="when">MONDAY 09 NOVEMBER 5PM</p>
+        <p>Our Parkside Councillor, Jennifer Bonham, has arranged a site meeting with Aaron Wood, Manager City Assets, City of Unley Council. All interested residents are encouraged to attend.</p>
+        <p>This is an opportunity to see the issue firsthand, hear Council’s position and express our concerns about the proposed solution. We would particularly like to see a solution that addresses the source of the problem, rather than simply attempting to manage its consequences at public expense.</p>
+        <p>Your attendance and input would be very much appreciated.</p>
+      </div>
+      <div class="qr">
+        <div class="code"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" shape-rendering="crispEdges"><path stroke="#23301f" d="M0 0.5h7m3 0h4m2 0h1m1 0h2m2 0h7M0 1.5h1m5 0h1m1 0h1m2 0h1m2 0h7m1 0h1m5 0h1M0 2.5h1m1 0h3m1 0h1m2 0h3m1 0h2m1 0h1m2 0h1m2 0h1m1 0h3m1 0h1M0 3.5h1m1 0h3m1 0h1m2 0h1m1 0h1m1 0h3m2 0h2m2 0h1m1 0h3m1 0h1M0 4.5h1m1 0h3m1 0h1m1 0h2m1 0h1m2 0h1m4 0h1m2 0h1m1 0h3m1 0h1M0 5.5h1m5 0h1m5 0h2m5 0h2m1 0h1m5 0h1M0 6.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M10 7.5h1m2 0h2m1 0h4M0 8.5h1m1 0h1m1 0h1m1 0h1m2 0h4m1 0h2m1 0h2m1 0h1m3 0h1m2 0h1M1 9.5h2m1 0h2m1 0h2m3 0h1m1 0h2m4 0h1m1 0h1m2 0h1m2 0h1M3 10.5h4m4 0h3m3 0h1m2 0h1m1 0h2m2 0h3M0 11.5h2m1 0h1m1 0h1m3 0h1m1 0h1m3 0h1m1 0h1m1 0h1m2 0h3m2 0h1M0 12.5h2m3 0h4m2 0h2m3 0h2m3 0h2m2 0h1m1 0h2M0 13.5h3m4 0h1m1 0h1m1 0h3m1 0h3m2 0h3m2 0h1m2 0h1M3 14.5h2m1 0h1m1 0h1m1 0h2m2 0h3m3 0h1m1 0h1m2 0h1m1 0h2M1 15.5h1m6 0h1m4 0h2m1 0h2m2 0h1m1 0h2m1 0h1m1 0h1M0 16.5h1m1 0h3m1 0h1m3 0h1m3 0h2m1 0h1m1 0h5m1 0h1m1 0h2M2 17.5h2m5 0h1m1 0h2m1 0h2m1 0h1m4 0h1m2 0h2m1 0h1M0 18.5h1m1 0h5m1 0h3m1 0h2m8 0h3m2 0h2M1 19.5h2m1 0h2m1 0h1m1 0h4m2 0h1m1 0h2m2 0h5m1 0h1M0 20.5h1m1 0h2m2 0h3m7 0h2m1 0h6M8 21.5h1m2 0h3m1 0h6m3 0h1m1 0h3M0 22.5h7m2 0h2m3 0h4m1 0h2m1 0h1m1 0h2m1 0h2M0 23.5h1m5 0h1m4 0h1m1 0h2m1 0h2m2 0h1m3 0h2m1 0h1M0 24.5h1m1 0h3m1 0h1m1 0h3m1 0h1m1 0h2m2 0h1m1 0h5m2 0h1M0 25.5h1m1 0h3m1 0h1m2 0h3m1 0h3m7 0h2m1 0h1M0 26.5h1m1 0h3m1 0h1m1 0h2m2 0h3m2 0h1m1 0h2m2 0h3m2 0h1M0 27.5h1m5 0h1m2 0h2m1 0h4m3 0h2m2 0h2m2 0h1M0 28.5h7m1 0h1m2 0h1m1 0h1m2 0h1m2 0h4m1 0h1m2 0h2"/></svg>
+</div>
+        <small>birkscreek.pages.dev</small>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="sign">
+    <span class="name">Yours faithfully, <strong>Craig Ritchie</strong> 2A Birks St</span>
+    <span>+61 (0) 481 373 266</span>
+  </footer>
+
+</div>
+</body>
+</html>

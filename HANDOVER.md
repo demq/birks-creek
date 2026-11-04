@@ -29,7 +29,7 @@ Live now, top to bottom:
 2. **Scenic lookout**: a panorama crop of the second photo (gutter and pool).
 3. **Community meeting notice**: Mon 9 Nov 2026, 5–6pm, corner of Birks & Myra St, with
    Unley Council's Assets Manager and both Parkside Ward Councillors. It offers "Add to
-   calendar" (`public/meeting.ics`), "Download handout (PDF)", the contact email and the
+   calendar" (`public/meeting.ics`), "Download flyer (PDF)", the contact email and the
    councillors' council emails. **After 6pm on 9 Nov the label switches by itself to
    "Meeting held · updates to follow"** (`src/main.ts`, `MEETING_END`). Replace this
    section with the outcome once known.
@@ -38,8 +38,9 @@ Live now, top to bottom:
    page says so.
 5. **Footer**: "Not affiliated with any tourism authority."
 
-Also in the repo: a printable **A4 meeting handout** (`handout/`). It sets out Council's
-own policy (see §6) and lists questions to ask at the meeting.
+Also in the repo: the resident **flyer** (`handout/flyer.src.html`, linked from the site) and an
+older, unlinked A4 policy handout (`handout/handout.src.html`) that sets out Council's own
+policy (see §6) and lists questions to ask. The meeting place is now "Outside 4 Birks St".
 
 ## 3. Tech
 
@@ -99,6 +100,15 @@ cp Birks-St-Meeting-Handout.pdf ../public/birks-st-meeting-handout.pdf
 ```
 
 Check that it still fits on one A4 page, then deploy.
+
+### Update the resident flyer
+
+The resident flyer (original text from the organiser's Word/ODT file in `photos/`, restyled,
+with a QR code to the site) lives in `handout/flyer.src.html`. Its photos are in
+`handout/flyer-img/` and the QR is `handout/flyer-qr.svg`. Rebuild with
+`handout/build-flyer.sh`, which also copies the PDF to `public/groundwater-meeting-flyer.pdf`.
+The site links to it as "Download flyer (PDF)". The flyer replaced the old handout download on the site (the user chose to publish it as is, including the organiser's name,
+address and phone, which departs from §5).
 
 ## 5. Content rules (important)
 
